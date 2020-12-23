@@ -1,0 +1,55 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  font-family: "Limelight", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+body .well {
+  position: relative;
+  overflow: hidden;
+  transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+body .well .page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 10vmin;
+  box-sizing: border-box;
+  color: #333;
+  cursor: default;
+}
+
+body .well .page::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+body .well .page .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 80%;
+  color: red;
+  position: relative;
+  top: -.2em;
+  cursor: pointer;
+}
+
+body .well .page .lnb_wrap {
+  width: 25vw;
+  height: 100vh;
+  background-color: #f6f6f5;
+  float: left;
+}
+
+body .well .page .contents_wrap {
+  width: 75vw;
+  height: 100vh;
+  float: left;
+  background-color: #151515;
+}
+/*# sourceMappingURL=cover.css.map */
