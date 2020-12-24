@@ -16,7 +16,6 @@ body .well .page {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  font-size: 10vmin;
   box-sizing: border-box;
   color: #333;
   cursor: default;
@@ -40,16 +39,237 @@ body .well .page .top {
 }
 
 body .well .page .lnb_wrap {
-  width: 25vw;
-  height: 100vh;
+  position: relative;
+  width: 25%;
+  height: 100%;
   background-color: #f6f6f5;
   float: left;
 }
 
+body .well .page .lnb_wrap .title {
+  width: 80%;
+  height: 10%;
+  margin: 30% auto 10%;
+}
+
+body .well .page .lnb_wrap .title h3 {
+  font-size: 2vw;
+  font-weight: 700;
+  padding: 0 0 3% 3%;
+  border-bottom: 0.2vw solid #333;
+  text-align: left;
+}
+
+body .well .page .lnb_wrap .title h4 {
+  font-size: 1.5vw;
+  text-align: right;
+  padding: 3% 3% 0 0;
+  font-weight: 500;
+}
+
+body .well .page .lnb_wrap .lnb_list {
+  position: relative;
+  width: 80%;
+  margin: 30% auto 10%;
+  border-top: 0.2vw solid #333;
+  padding-top: 5%;
+}
+
+body .well .page .lnb_wrap .lnb_list li {
+  font-size: 1.4vw;
+  padding: 3%;
+}
+
+body .well .page .lnb_wrap .lnb_list li.active {
+  background-color: #d9d9d9;
+}
+
+body .well .page .lnb_wrap .lnb_list li:hover {
+  background-color: #d9d9d9;
+}
+
+body .well .page .lnb_wrap .lnb_btn {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  margin-left: -40%;
+  width: 80%;
+  text-align: center;
+}
+
+body .well .page .lnb_wrap .lnb_btn span {
+  display: inline-block;
+  width: 5%;
+  padding-bottom: 5%;
+  border: 0.15rem solid #333;
+  background-color: #333;
+  border-radius: 50%;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+body .well .page .lnb_wrap .lnb_btn span:nth-child(1) {
+  margin-left: 0px;
+}
+
+body .well .page .lnb_wrap .lnb_btn span.active {
+  border: 0.15rem solid #333;
+  background-color: #fff;
+}
+
+body .well .page .lnb_wrap .lnb_btn span:hover {
+  border: 0.15rem solid #333;
+  background-color: #fff;
+}
+
 body .well .page .contents_wrap {
-  width: 75vw;
-  height: 100vh;
+  width: 75%;
+  height: 100%;
   float: left;
   background-color: #151515;
+}
+
+body .well .page.page_1 .contents_wrap {
+  position: relative;
+}
+
+body .well .page.page_1 .contents_wrap .name_wrap {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 60%;
+}
+
+body .well .page.page_1 .contents_wrap .name_wrap div {
+  text-align: right;
+  width: 49.5%;
+}
+
+body .well .page.page_1 .contents_wrap .name_wrap div.text_box {
+  position: relative;
+  left: 18%;
+}
+
+body .well .page.page_1 .contents_wrap .name_wrap div.text_box span {
+  display: block;
+  color: #fff;
+}
+
+body .well .page.page_1 .contents_wrap .name_wrap div.text_box span.name_intro {
+  width: 100%;
+  font-size: 2vw;
+  padding-bottom: 3%;
+  margin-bottom: 4%;
+  border-bottom: 0.15rem solid #fff;
+}
+
+body .well .page.page_1 .contents_wrap .name_wrap div.text_box span.name_text {
+  font-size: 4vw;
+}
+
+body .well .page.page_1 .contents_wrap .name_wrap div.image_wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body .well .page.page_1 .contents_wrap .name_wrap div.image_wrap img {
+  width: 12vw;
+  height: auto;
+}
+
+body .well .page.page_1 .contents_wrap .myIntroduce_wrap {
+  position: absolute;
+  width: 80%;
+  bottom: 15%;
+  left: 10%;
+  box-sizing: border-box;
+}
+
+body .well .page.page_1 .contents_wrap .myIntroduce_wrap div.introduceBox_1 {
+  position: relative;
+  top: 0;
+  width: 20%;
+}
+
+body .well .page.page_1 .contents_wrap .myIntroduce_wrap div.introduceBox_1 .circle_box div {
+  position: absolute;
+  width: 3.5%;
+  padding-bottom: 3.5%;
+  background-color: #fff;
+  display: block;
+  border-radius: 50%;
+}
+
+body .well .page.page_1 .contents_wrap .myIntroduce_wrap div.introduceBox_1 .circle_box div.circle_1 {
+  top: 15%;
+  left: -15%;
+}
+
+body .well .page.page_1 .contents_wrap .myIntroduce_wrap div.introduceBox_1 .circle_box div.circle_1 .bar {
+  position: absolute;
+  border-radius: 0;
+  top: 180%;
+  left: 35%;
+  width: 30%;
+  padding-bottom: 1320%;
+  background-color: #fff;
+}
+
+body .well .page.page_1 .contents_wrap .myIntroduce_wrap div.introduceBox_1 .circle_box div.circle_2 {
+  top: 51%;
+  left: -15%;
+}
+
+body .well .page.page_1 .contents_wrap .myIntroduce_wrap div.introduceBox_1 .circle_box div.circle_2 .bar {
+  position: absolute;
+  border-radius: 0;
+  top: 180%;
+  left: 35%;
+  width: 30%;
+  padding-bottom: 1320%;
+  background-color: #fff;
+}
+
+body .well .page.page_1 .contents_wrap .myIntroduce_wrap div.introduceBox_1 .circle_box div.circle_3 {
+  top: 87%;
+  left: -15%;
+}
+
+body .well .page.page_1 .contents_wrap .myIntroduce_wrap div.introduceBox_1 .text {
+  color: #fff;
+}
+
+body .well .page.page_1 .contents_wrap .myIntroduce_wrap div.introduceBox_1 .text li {
+  font-weight: 500;
+  font-size: 1.8vw;
+  line-height: 1.5;
+  margin-bottom: 15%;
+}
+
+body .well .page.page_1 .contents_wrap .myIntroduce_wrap div.introduceBox_1 .text span {
+  font-weight: 300;
+  font-size: 1.5vw;
+  display: block;
+}
+
+body .well .page.page_1 .contents_wrap .myIntroduce_wrap div.introduceBox_2 {
+  position: absolute;
+  right: 0;
+  top: -10%;
+  width: 50%;
+  color: #fff;
+}
+
+body .well .page.page_1 .contents_wrap .myIntroduce_wrap div.introduceBox_2 div.title_box {
+  text-align: right;
+  padding-right: 3%;
+  font-size: 2vw;
+}
+
+body .well .page.page_1 .contents_wrap .myIntroduce_wrap div.introduceBox_2 div p {
+  font-size: 1.5vw;
+  padding: 5%;
+  box-sizing: border-box;
 }
 /*# sourceMappingURL=cover.css.map */
